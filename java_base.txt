@@ -1,5 +1,0 @@
-em java funcoes recebem o nome de método
-
-main 
-mais ctrl espaco
-public static void
