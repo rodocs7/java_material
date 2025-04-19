@@ -1,0 +1,473 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		x = sc.next
+		
+		
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+-------------------------------------
+
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int x, y;
+		
+		x = 5;
+				
+		y = 2 * x;
+		
+		System.out.println(x);
+		System.out.println(y);
+	}
+
+}
+
+
+-----------------------------------------
+
+
+
+
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int a, b;
+		double resultado;
+		
+		a = 5;
+		b = 2;
+		
+		resultado = (double) a / b;    ----------------------> para dar como 2.5 e nao int como 2.0
+		
+		System.out.println(resultado);
+	}
+
+}
+
+
+-----------------------------------------
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.print("digite algo: ");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		x = sc.next();
+		System.out.println("Voce digitou: " + x);
+		
+		
+		sc.close();
+	}
+
+}
+
+
+-------------------------------------------
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("digite um number: ");
+		
+		int mask = 0b100000;
+		int n = sc.nextInt();
+		
+		if ((n & mask) != 0) {
+			System.out.println("6th bit is true!");
+		}
+		else {
+			System.out.println("6th bit is false!");
+		}
+		
+		sc.close();
+	}
+
+}
+
+--------------------------------------
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("digite um number: ");
+		
+		int mask = 0b100000;
+		int n = sc.nextInt();
+		
+		if ((n & mask) != 0) {
+			System.out.println("6th bit is true!");
+		}
+		else {
+			System.out.println("6th bit is false!");
+		}
+		
+		sc.close();
+	}
+
+}
+
+-------------------------------------
+
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String original = "abcde FGHIJ ABC abc DEFG   ";
+		 String s01 = original.toLowerCase();
+		 String s02 = original.toUpperCase();
+		 String s03 = original.trim();
+		 String s04 = original.substring(2);
+		 String s05 = original.substring(2, 9);
+		 String s06 = original.replace('a', 'x');
+		 String s07 = original.replace("abc", "xy");
+		 int i = original.indexOf("bc");
+		 int j = original.lastIndexOf("bc");
+		 System.out.println("Original: - " + original + "-");
+		 System.out.println("toLowerCase: - " + s01 + "-");
+		 System.out.println("toUpperCase: - " + s02 + "-");
+		 System.out.println("trim: - " + s03 + "-");
+		 System.out.println("substring(2): - " + s04 + "-");
+		 System.out.println("substring(2, 9): - " + s05 + "-");
+		 System.out.println("replace('a', 'x'): - " + s06 + "-");
+		 System.out.println("replace('abc', 'xy'): - " + s07 + "-");
+		 System.out.println("Index of 'bc': - " + i);
+		 System.out.println("Last index of 'bc': - " + j);
+		 
+	}
+
+}
+
+
+--------------------------------------------------
+
+
+
+package course;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		 String s = "potato apple lemon";
+		 String[] vect = s.split(" ");
+		 
+		 System.out.println(vect[0]);
+		 System.out.println(vect[1]);
+		 System.out.println(vect[2]);
+
+		 
+		 
+		 
+	}
+
+}
+
+------------------------------------------------
+
+sem funcao
+
+package course;
+
+import java.util.Scanner;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Enter three numbers: ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		
+		if (a > b && a > c) {
+			System.out.println("Higher = " + a);
+		}
+		else if (b > c) {
+			System.out.println("Higher = " + b);
+		}
+		else {
+			System.out.println("Higher = " +c);
+		}
+		
+		
+		sc.close();
+	}
+}
+
+----------------------------------
+
+package course;
+
+import java.util.Scanner;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Enter three numbers: ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		int higher = max(a, b, c);
+		
+		showResult(higher);                // funcao funcao funcao
+		
+		sc.close();
+	}
+	
+	public static int max(int x, int y, int z) {
+		int aux;
+		if (x > y && x > z) {
+			aux = x;
+		}
+		else if (y > z) {
+			aux = y;
+		}
+		else {
+			aux = z;
+		}
+		return aux;
+		
+	}
+	
+	public static void showResult(int value) {  //void para quer dizer reetorno vazio, que nao precisa ser reaproveitado
+		System.out.println("Higher = " + value);
+	}
+	
+}
+ 
+ 
+ ---------------------------------------------------
+ 
+ 
+ 
+criado sem classe:
+
+
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in); //ctrl shift o para importar
+		double xA, xB, xC, yA, yB, yC;
+		
+		System.out.println("Enter the measres of triangle X: ");
+		xA = sc.nextDouble();
+		xB = sc.nextDouble();
+		xC = sc.nextDouble();
+		
+		System.out.println("Enter the measres of triangle Y: ");
+		yA = sc.nextDouble();
+		yB = sc.nextDouble();
+		yC = sc.nextDouble();
+		
+		double p = (xA + xB + xC) / 2.0;
+		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+		
+		p = (yA + yB + yC) / 2.0;
+		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
+		
+		System.out.printf("Triangle X area: %.4f%n", areaX);
+		System.out.printf("Triangle Y area: %.4f%n", areaY);		
+		
+		
+		if (areaX > areaY) {
+			System.out.println("Larger area: X");
+		}
+		else {
+			System.out.println("Larger area: Y");
+		}
+			
+		
+				
+		sc.close();
+		
+	}
+
+}
+
+
+
+--------------------------------------------
+
+
+
+com classe
+
+
+
+programa:
+
+
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in); //ctrl shift o para importar
+		
+		Triangle x, y;
+		x = new Triangle();
+		y = new Triangle();
+		
+		System.out.println("Enter the measres of triangle X: ");
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
+		
+		System.out.println("Enter the measres of triangle Y: ");
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
+		
+		double areaX = x.area();
+		double areaY = y.area();
+
+		System.out.printf("Triangle X area: %.4f%n", areaX);
+		System.out.printf("Triangle Y area: %.4f%n", areaY);		
+		
+		
+		if (areaX > areaY) {
+			System.out.println("Larger area: X");
+		}
+		else {
+			System.out.println("Larger area: Y");
+		}
+			
+		
+				
+		sc.close();
+		
+	}
+
+}
+
+
+
+
+classe:
+
+
+package entities;  // o triangulo é uma entidade do nosso negócio que mexe com áreas de triangulos
+
+public class Triangle {
+
+	public double a;
+	public double b;
+	public double c;
+	
+	
+	/* aqui abaixo em () ele nao  precisa preencher a lista de parametros do metodo,
+	 porque na classe ja tem tudo o que ele precisa, que é o A, B e C */
+	
+	public double area() {
+		double p = (a + b + c) / 2.0;
+		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+	}
+ 
+}
+
+
+
+
+-------------------------------
+
+
+aula 67
+
+metodo
+
+
+
+package entities; 
+
+public class Product {
+
+	public String name;
+	public double price;
+	public int quantity;
+	
+	
+	public double TotalValuelnStock() {
+		return price * quantity;
+	}
+	
+	
+	public void /* o void é pq é tipo vazio, vai dentro do proximo parentes () */ 
+	AddProducts(int quantity) {
+		this.quantity += quantity; //com o this ele adiciona quantidade a mesma variável
+	}
+	
+	
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity; //ele recebe ele mesmo menos o atributo (quantity) principal 
+	}
+ 
+}

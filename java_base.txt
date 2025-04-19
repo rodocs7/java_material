@@ -1,0 +1,167 @@
+em java funcoes recebem o nome de método
+
+main 
+mais ctrl espaco
+public static void
+
+
+------------------
+
+
+eclipse
+
+Completar código: Ctrl + Space
+Criar um novo arquivo: Ctrl + N
+Formatar código-fonte: Ctrl + Shift + F
+Organizar importações: Ctrl + Shift + O
+Renomear refatorando: Alt + Shift + R
+Fechar janela de edição: Ctrl + W
+Fechar todas as janelas de edição: Ctrl + Shift + W
+Excluir linha de código: Ctrl + D
+Localizar método / atributo em uma classe: Ctrl + O
+Localizar arquivos no workspace: Ctrl + Shift + R
+Descobrir onde estão as classes em um workspace mesmo que dentro de um jar: Ctrl + Shift + T
+Lista de atalhos do Eclipse: Ctrl + Shift + L
+Expandir tela: Ctrl + M
+Autocomplete: Ctrl + Espaço
+Importar a classe: Ctrl + Shift + O
+Refatorar o código: Ctrl + Shift + F
+Para imprimir na tela: SYSOUT ou SOUT ou SYSO + Ctrl + Espaço
+
+----------------
+
+
+uma classe tem membros
+
+ela pode ter atributos e métodos
+
+
+
+---------------------------
+
+
+aula 65.
+
+
+
+no momento que fao x = new triangle
+ vai ser criado um objeto do tipo triangle uma alocacao dinamica de memória chamada heap
+ 
+ heap = onde ficam os objetos dinamicos durante a execucao
+ stack = nao fica os objetos triangle, mas o endereco da caixinha que foi salvo o objeto na memória heap
+ 
+ 
+ 
+vimos nessa aula;
+classes, objetos, e atributos
+
+
+classe é triangle
+
+atributos sao o A, B  e o C ( OS LADOS DO TRIANGULO)
+
+o X e o Y sao os objetos que vao ser um triangle.
+ 
+ 
+
+
+CLASSE é  definição do TIPO {
+
+OBJETOS sao as instâncias da classe que tem os 
+
+ATRIBUTOS/MÉTODOS que a alocam pelo TIPO determinado neles. (double, int boolean)
+}
+
+
+
+package entities;  // o tringulo é uma entidade do nosso negócio que mexe com áreas de triangulos
+
+public class Triangle {
+
+	public double a;
+	public double b;
+	public double c;
+
+}
+
+// aqui temos apenas atributos nessa classe, sem métodos
+	
+	
+	
+	
+	------------------------------------------------
+	
+	
+	
+aula 66
+
+
+() é para delcarar que to chamando um método
+se eu preencher dentro dele algo, é uma lista de parâetro
+mas se eu nao precisaar, já for declarado, nao precisa
+
+
+
+
+package entities;  // o tringulo é uma entidade do nosso negócio que mexe com áreas de triangulos
+
+public class Triangle {
+
+	public double a;
+	public double b;
+	public double c;
+	
+	public double area() {
+		double p = (a + b + c) / 2.0;
+		double result = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+		return result;
+	}
+ 
+}
+
+
+ou ----- linha 136
+
+
+package entities;  // o tringulo é uma entidade do nosso negócio que mexe com áreas de triangulos
+
+public class Triangle {
+
+	public double a;
+	public double b;
+	public double c;
+	
+	public double area() {
+		double p = (a + b + c) / 2.0;
+		return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+	}
+ 
+}
+
+
+---------------------------------------------------
+
+
+aula 67
+
+
+	
+	public void /* o void é pq é tipo vazio, vai dentro do proximo parentes () */ 
+	AddProducts(int quantity) {
+		this.quantity += quantity; //com o this ele adiciona quantidade a mesma variável
+	}
+	
+	
+	public void removeProducts(int quantity) {
+		this.quantity -= quantity; //ele recebe ele mesmo menos o atributo (quantity) principal 
+		
+		
+		
+		
+
+------------------------------------
+
+
+AULA 68
+
+
